@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+}
+
+body {
+    background-color: hsl(218, 23%, 16%);
+    text-align: center;
+}
+
+#advice-generator-app {
+    margin: 8rem 1rem;
+    position: relative;
+}
+
+.quotes-box {
+    background-color: hsl(217, 19%, 24%);
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.heading {
+    color: hsl(150, 100%, 66%);
+    font-size: 0.8rem;
+    margin: 1.5rem 0rem;
+}
+
+.quote {
+    color: hsl(193, 38%, 86%);
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+}
+
+.divider-image {
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.dice {
+    background-color: hsl(150, 100%, 66%);
+    border: none;
+    border-radius: 100%;
+    padding: 1rem;
+    position: absolute;
+    display: flex;
+    bottom: -2rem;
+    cursor: pointer;
+}
+
+.dice:hover {
+    filter: drop-shadow(0 0 0.75rem hsl(150, 100%, 66%));
+    transition: all 0.2s ease-out
+}
+
+@media (min-width: 768px) and (max-width: 899px) {
+    #advice-generator-app {
+        margin: 10rem 10rem;
+    }
+
+    .heading {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 900px) and (max-width: 1024px) {
+    #advice-generator-app {
+        margin: 13rem 15rem;
+    }
+
+    .heading {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 1028px) {
+    #advice-generator-app {
+        margin: 15rem 25rem;
+    }
+
+    .heading {
+        font-size: 1rem;
+    }
+}
